@@ -134,22 +134,22 @@ body {
   z-index: 2;
   width: 100%;
   max-width: 1600px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .logoHeader {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
 }
 .logoNormal {
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
   margin: 50px 0;
 }
 
 .heroTitle {
   font-size: 60px;
   font-weight: 600;
-  font-family: "Montserrat", serif;
   margin-bottom: 50px;
 }
 
@@ -164,4 +164,232 @@ body {
   justify-content: space-between;
   font-size: 30px;
   margin-bottom: 50px;
+}
+
+/* aboutOur */
+.aboutOurtext {
+  display: flex;
+  flex-direction: column; /* Располагаем элементы вертикально */
+  align-items: flex-start; /* Все элементы начинаются с левого края */
+  gap: 20px;
+}
+
+.aboutOurtext h2 {
+  text-align: left;
+  font-size: 80px;
+  font-weight: 800;
+  margin: 100px 0;
+}
+
+.aboutOurtext p {
+  margin: 40px 0;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.5; /* Отступы между абзацами */
+}
+
+.aboutOurtext .left {
+  left: 0; /* Оставляем первый абзац слева */
+  text-align: left; /* Выравниваем текст по левому краю */
+}
+
+.aboutOurtext .center {
+  position: relative;
+  left: 50%; /* Смещаем второй абзац на 50% */
+  transform: translateX(-50%); /* Центрируем относительно центра контейнера */
+  text-align: left; /* Центрируем текст */
+}
+
+.aboutOurtext .right {
+  position: relative;
+  left: 100%; /* Смещаем третий абзац в правую часть */
+  transform: translateX(-100%); /* Перемещаем влево на ширину самого блока */
+  text-align: left;
+  padding-bottom: 100px;
+}
+
+.aboutOur {
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutOur::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 110%;
+  height: 110%;
+  background-image: url(../images/5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
+  z-index: 1; /* Фон ниже контента */
+}
+
+/* affordable housing */
+
+.affordableHousing h2 {
+  text-align: left;
+  font-size: 80px;
+  font-weight: 800;
+  margin: 100px 0;
+}
+
+.affordableHousing {
+  position: relative;
+  overflow: hidden;
+}
+
+.affordableHousing::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 110%;
+  height: 110%;
+  background-image: url(../images/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
+  z-index: 1; /* Фон ниже контента */
+}
+
+.affordableHousing p {
+  text-align: left;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 100px;
+  line-height: 1.5;
+}
+
+/* layouts  */
+
+.layouts {
+  position: relative;
+  overflow: hidden;
+}
+
+.layouts::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 110%;
+  height: 110%;
+  background-image: url(../images/6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
+  z-index: 1; /* Фон ниже контента */
+}
+
+.layouts .container h2 {
+  text-align: left;
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.layouts .container p {
+  text-align: left;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 100px;
+  line-height: 1.7;
+}
+
+/* layoutFoto  */
+
+/* Сетка фотографий */
+.photo-grid {
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Три колонки */
+  gap: 50px; /* Отступы между фото */
+}
+
+.photo {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.05); /* Эффект увеличения при наведении */
+}
+
+/* Стили модального окна */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  position: absolute;
+}
+
+.close {
+  position: relative;
+  top: -314px;
+  right: -447px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.layoutFoto {
+  position: relative;
+  overflow: hidden;
+}
+
+.layoutFoto::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 110%;
+  height: 110%;
+  background-image: url(../images/5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
+  z-index: 1; /* Фон ниже контента */
+}
+
+/* document */
+
+.document {
+  position: relative;
+  overflow: hidden;
+}
+
+.document::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 110%;
+  height: 110%;
+  background-image: url(../images/4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
+  z-index: 1; /* Фон ниже контента */
 }

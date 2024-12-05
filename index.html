@@ -21,8 +21,8 @@
                 <li><a href="#aboutConstruction">Про будівництво</a></li>
                 <li><a href="#affordableHousing">Ціни та розтермінування</a></li>
                 <li><a href="#layout">Планування</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#fotoVideo">Фото</a></li>
+                <li><a href="#salesDepartment">Відділ продажу</a></li>
             </ul>
         </nav>
         <a href="tel:+380993203744" class="call-link">
@@ -37,8 +37,8 @@
                 <li><a href="#aboutConstruction">Про будівництво</a></li>
                 <li><a href="#affordableHousing">Ціни та розтермінування</a></li>
                 <li><a href="#layout">Планування</a></li>
-                <li><a href="#foto">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#fotoVideo">Фото</a></li>
+                <li><a href="#salesDepartment">Відділ продажу</a></li>
             </ul>
             <a href="tel:+380993203744" class="call-link">
                 Зв'язатися з нами:<br> +38 099 320 37 44
@@ -120,12 +120,90 @@
         <section class="document">
             <div class="container">
                 <h2>Дозвільні документи</h2>
-                <p><img src="./images/icons/" alt=""></p>
-                <p><img src="./images/icons/" alt=""></p>
-                <p><img src="./images/icons/" alt=""></p>
-                <p><img src="./images/icons/" alt=""></p>
+                <p><img src="./images/icons/check.svg" alt="checkmark">Ліцензія</p>
+                <p><img src="./images/icons/check.svg" alt="checkmark">Дозвіл на будівництво</p>
+                <p><img src="./images/icons/check.svg" alt="checkmark">Витяги</p>
+                <p><img src="./images/icons/check.svg" alt="checkmark">Висновок юриста</p>
             </div>
         </section>
+        <section class="fotoVideo" id="fotoVideo">
+            <div class="container">
+
+                <!-- <img class="logoNormal" src="./images/logo (1).png" alt="logo"> -->
+                <h2>Фото</h2>
+
+
+
+                <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="./images/1.jpg" alt="Слайд 1" class="photo">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/2.jpg" alt="Слайд 2" class="photo">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/3.jpg" alt="Слайд 3" class="photo">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/4.jpg" alt="Слайд 4" class="photo">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/5.jpg" alt="Слайд 5" class="photo">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/6.jpg" alt="Слайд 6" class="photo">
+                        </div>
+                    </div>
+                    <button class="next">&gt;</button>
+                </div>
+
+                <div id="modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+
+
+            </div>
+        </section>
+        <footer class="footer" id="salesDepartment">
+
+
+            <a href="#"><img class="logoHeader" src="./images/logo (1).png" alt="logo"></a>
+            <div class="btn-container">
+                <a href="https://docs.google.com/forms/d/1kk3LzFMvsHrKedQQOik6soOjdWKw3zmGFl243tecwCs/edit" class="btn"
+                    target="_blank">
+                    Записатися на перегляд
+                </a>
+            </div>
+            <div class="contacts">
+                <div class="sales-department">
+                    <h3>Відділ продажу</h3>
+                    <p>м. Вишгород, проспект Шевченка, 5</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Контакти</h3>
+                    <p><a href="tel:+380993203744">+38 099 320 37 44</a></p>
+                    <div class="social-icons">
+                        <a href="">
+                            <svg class="addres-icon" width="32" height="32">
+                                <use href="./images/icons/icons.svg#icon-facebook1">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg class="addres-icon" width="32" height="32">
+                                <use href="./images/icons/icons.svg#icon-instagram1">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
     </main>
     <script src="./js/main.js"></script>
 </body>

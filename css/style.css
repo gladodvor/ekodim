@@ -104,34 +104,14 @@ body {
 
 /* aboutConstruction */
 .aboutConstruction {
-  position: relative;
-  padding-bottom: 100px;
-  /* background-image: url(../images/4.jpg); */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* filter: brightness(50%) blur(5px); */
-  overflow: hidden;
-}
-
-.aboutConstruction::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 110%;
-  height: 110%;
-  background-image: url(../images/4.jpg);
+  background-image: url(../images/background/4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
-  z-index: 1; /* Фон ниже контента */
 }
 
 .container {
   position: relative;
-  z-index: 2;
   width: 100%;
   max-width: 1600px;
   padding: 0 15px;
@@ -144,7 +124,7 @@ body {
 .logoNormal {
   width: 400px;
   height: 400px;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
 }
 
 .heroTitle {
@@ -163,7 +143,7 @@ body {
   list-style: none;
   justify-content: space-between;
   font-size: 30px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 /* aboutOur */
@@ -209,23 +189,10 @@ body {
 }
 
 .aboutOur {
-  position: relative;
-  overflow: hidden;
-}
-
-.aboutOur::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 110%;
-  height: 110%;
-  background-image: url(../images/5.jpg);
+  background-image: url(../images/background/3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
-  z-index: 1; /* Фон ниже контента */
 }
 
 /* affordable housing */
@@ -234,57 +201,32 @@ body {
   text-align: left;
   font-size: 80px;
   font-weight: 800;
-  margin: 100px 0;
+  margin: 0 0 100px 0;
+  padding-top: 100px;
 }
 
 .affordableHousing {
-  position: relative;
-  overflow: hidden;
-}
-
-.affordableHousing::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 110%;
-  height: 110%;
-  background-image: url(../images/1.jpg);
+  background-image: url(../images/background/1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
-  z-index: 1; /* Фон ниже контента */
 }
 
 .affordableHousing p {
   text-align: left;
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   line-height: 1.5;
 }
 
 /* layouts  */
 
 .layouts {
-  position: relative;
-  overflow: hidden;
-}
-
-.layouts::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 110%;
-  height: 110%;
-  background-image: url(../images/6.jpg);
+  background-image: url(../images/background/6.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
-  z-index: 1; /* Фон ниже контента */
 }
 
 .layouts .container h2 {
@@ -298,7 +240,7 @@ body {
   text-align: left;
   font-size: 60px;
   font-weight: 500;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   line-height: 1.7;
 }
 
@@ -306,7 +248,7 @@ body {
 
 /* Сетка фотографий */
 .photo-grid {
-  margin: 100px 0;
+  padding: 100px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Три колонки */
   gap: 50px; /* Отступы между фото */
@@ -331,7 +273,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
-  z-index: 1000;
+  z-index: 9999; /* Увеличиваем приоритет модального окна */
   justify-content: center;
   align-items: center;
 }
@@ -343,53 +285,207 @@ body {
 }
 
 .close {
-  position: relative;
-  top: -314px;
-  right: -447px;
-  font-size: 50px;
-  color: white;
-  cursor: pointer;
-  z-index: 1001;
+  position: absolute; /* Абсолютное позиционирование относительно модального окна */
+  top: 10px; /* Отступ от верхнего края модального окна */
+  right: 10px; /* Отступ от правого края модального окна */
+  font-size: 2rem; /* Размер текста */
+  color: white; /* Цвет текста */
+  cursor: pointer; /* Указатель при наведении */
+  z-index: 10001;
+}
+
+.close:hover {
+  color: red; /* Меняем цвет при наведении */
+  transform: scale(1.2); /* Увеличиваем размер при наведении */
 }
 
 .layoutFoto {
-  position: relative;
-  overflow: hidden;
-}
-
-.layoutFoto::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 110%;
-  height: 110%;
-  background-image: url(../images/5.jpg);
+  background-image: url(../images/background/5.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
-  z-index: 1; /* Фон ниже контента */
 }
 
 /* document */
 
 .document {
-  position: relative;
-  overflow: hidden;
-}
-
-.document::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 110%;
-  height: 110%;
-  background-image: url(../images/4.jpg);
+  background-image: url(../images/background/4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%) blur(4px); /* Применяем размытие и затемнение */
-  z-index: 1; /* Фон ниже контента */
+}
+
+.document .container p img {
+  background: transparent;
+  vertical-align: sub;
+  width: 65px;
+}
+
+.document .container h2 {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 700;
+  padding: 100px 0;
+}
+
+.document .container p {
+  text-align: left;
+  font-size: 60px;
+  font-weight: 500;
+  padding-bottom: 50px;
+  line-height: 1.7;
+}
+
+/* foto/video  */
+
+.fotoVideo {
+  background-image: url(../images/background/6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotoVideo .container h2 {
+  font-size: 80px;
+  font-weight: 800;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.fotologo img {
+  width: 120px; /* Размер логотипа */
+  height: auto;
+  margin-right: auto; /* Логотип выравнивается влево */
+}
+
+.slider {
+  position: relative;
+  width: 80%; /* Ширина слайдера */
+  max-width: 1200px;
+  margin: 0 auto; /* Центрируем слайдер */
+  overflow: hidden; /* Скрываем всё, что выходит за границы */
+  padding-bottom: 100px;
+}
+
+.slider-track {
+  display: flex; /* Элементы располагаются в одну строку */
+  transition: transform 0.5s ease-in-out; /* Плавная анимация прокрутки */
+}
+
+.slide {
+  flex: 0 0 calc(100% / 3); /* Каждый слайд занимает треть ширины контейнера */
+  box-sizing: border-box; /* Учитываем границы и отступы */
+  padding: 10px; /* Отступы между слайдами */
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+/* Блокируем кнопку при достижении конца */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* footer  */
+/* Общие стили кнопки */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: #005e75;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px; /* Отступы внутри кнопки */
+  background-color: #fff;
+  color: black; /* Цвет текста */
+  text-decoration: none; /* Убираем подчёркивание */
+  font-family: "Montserrat", sans-serif; /* Шрифт кнопки */
+  font-size: 18px; /* Размер текста */
+  font-weight: 600; /* Полужирный текст */
+  text-align: center;
+  border-radius: 5px; /* Закруглённые углы */
+  transition: all 0.3s ease; /* Плавный переход для эффектов */
+}
+
+/* Эффект при наведении */
+.btn:hover {
+  background-color: #007b9a; /* Более светлый оттенок */
+  transform: translateY(-3px); /* Лёгкий подъём кнопки */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+/* Версия для мобильных устройств */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 16px; /* Уменьшаем текст для маленьких экранов */
+    padding: 10px 20px; /* Уменьшаем отступы */
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap; /* Для мобильных устройств элементы переходят на новую строку */
+  /* Расстояние между блоками */
+}
+
+.sales-department,
+.contact-info {
+  flex: 1; /* Блоки занимают равное пространство */
+  /* Минимальная ширина */
+}
+
+.sales-department h3,
+.contact-info h3 {
+  font-size: 18px; /* Размер заголовка */
+  margin-bottom: 10px; /* Отступ снизу */
+  text-transform: uppercase; /* Заглавные буквы */
+}
+
+.sales-department p,
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none; /* Убираем подчёркивание у ссылок */
+  font-weight: bold;
+  padding-right: 10px;
+}
+.addres-icon {
+  fill: #fff;
+}
+.btn-container {
+  margin-left: 200px; /* Занимаем всю ширину */
 }

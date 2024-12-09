@@ -519,6 +519,7 @@ button:disabled {
   .logoNormal {
     width: 200px;
     height: 200px;
+    margin: 100px 0 0 0;
   }
 
   .ptitle {
@@ -637,6 +638,7 @@ button:disabled {
   .logoNormal {
     width: 150px;
     height: 150px;
+    margin: 100px 0 0 0;
   }
 
   .ptitle {

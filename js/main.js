@@ -1,3 +1,11 @@
+const burgerMenu = document.getElementById("burgerMenu");
+const mobileMenu = document.getElementById("mobileMenu");
+
+burgerMenu.addEventListener("click", () => {
+  mobileMenu.style.display =
+    mobileMenu.style.display === "block" ? "none" : "block";
+});
+
 //
 // Получаем элементы для модального окна
 const modal = document.getElementById("modal");

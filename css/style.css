@@ -60,7 +60,7 @@ body {
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 80px;
   right: 10px;
   background-color: #005e75;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -92,6 +92,16 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .menu,
+  .call-link {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
   .menu,
   .call-link {
     display: none;
@@ -488,4 +498,242 @@ button:disabled {
 }
 .btn-container {
   margin-left: 200px; /* Занимаем всю ширину */
+}
+
+/* ===================
+   Адаптация под планшеты
+   =================== */
+@media (max-width: 768px) {
+  /* Уменьшаем шрифты и размеры элементов */
+  body {
+    font-size: 14px;
+  }
+
+  /* Хедер */
+
+  /* Основной контент */
+  .heroTitle {
+    font-size: 40px;
+  }
+
+  .logoNormal {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ptitle {
+    font-size: 20px;
+  }
+
+  .titleList {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Секция Про нас */
+  .aboutOurtext h2 {
+    font-size: 40px;
+  }
+
+  .aboutOurtext p {
+    font-size: 16px;
+  }
+
+  /* Секция Жилье */
+  .affordableHousing h2 {
+    font-size: 50px;
+  }
+
+  .affordableHousing p {
+    font-size: 20px;
+  }
+
+  /* Сетка фотографий */
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  /* Секция планировок */
+  .layouts .container h2 {
+    font-size: 40px;
+  }
+
+  .layouts .container p {
+    font-size: 20px;
+  }
+
+  /* Секция Фото/Видео */
+  .fotoVideo .container h2 {
+    font-size: 40px;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+
+  /* Секция документов */
+  .document .container h2 {
+    font-size: 40px;
+  }
+
+  .document .container p {
+    font-size: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-container {
+    margin: 20px 0;
+  }
+
+  .sales-department,
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sales-department p,
+  .contact-info p {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .addres-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ===================
+     Адаптация под мобильные устройства
+     =================== */
+@media (max-width: 480px) {
+  /* Уменьшаем ещё больше размеры шрифтов и элементов */
+  body {
+    font-size: 12px;
+  }
+
+  /* Основной контент */
+  .heroTitle {
+    font-size: 32px;
+  }
+
+  .logoNormal {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ptitle {
+    font-size: 18px;
+  }
+
+  .titleList {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Секция Про нас */
+  .aboutOurtext h2 {
+    font-size: 32px;
+  }
+
+  .aboutOurtext p {
+    font-size: 14px;
+  }
+
+  /* Секция Жилье */
+  .affordableHousing h2 {
+    font-size: 32px;
+  }
+
+  .affordableHousing p {
+    font-size: 16px;
+  }
+
+  /* Сетка фотографий */
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  /* Секция планировок */
+  .layouts .container h2 {
+    font-size: 32px;
+  }
+
+  .layouts .container p {
+    font-size: 18px;
+  }
+
+  /* Секция Фото/Видео */
+  .fotoVideo .container h2 {
+    font-size: 32px;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+
+  /* Секция документов */
+  .document .container h2 {
+    font-size: 32px;
+  }
+
+  .document .container p {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-container {
+    margin: 10px 0;
+  }
+
+  .sales-department,
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sales-department p,
+  .contact-info p {
+    font-size: 12px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .addres-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
